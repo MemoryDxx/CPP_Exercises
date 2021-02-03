@@ -4,7 +4,14 @@
 #include <iostream>
 using namespace std;
 
+const int FOOT_TO_INCH = 12;
+
 int main()
 {
-    // TODO
+    int height;
+    cout << "input your height: _\b";
+    cin >> height;
+    cout << "身高" << height/FOOT_TO_INCH << "英尺";
+    cout << height%FOOT_TO_INCH << "英寸" << endl;
+    return 0;
 }
